@@ -5,7 +5,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 
 //diseños
-import './App.css';
+import './app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //pg
