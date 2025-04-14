@@ -1,9 +1,17 @@
 import { FunctionalComponent } from 'preact';
+import { useState } from 'preact/hooks';
+import Formulario from './formulario';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 import '../css/header.css';
-import'../css/headerres.css';
+import '../css/headerres.css';
 import icon1 from '../imgs/icon1.png';
 
 const Header: FunctionalComponent = () => {
+  const [showContact, setShowContact] = useState(false);
+
+  const handleOpenContact = () => setShowContact(true);
+  const handleCloseContact = () => setShowContact(false);
+
   return (
     <header>
       <div className="head">
@@ -29,8 +37,20 @@ const Header: FunctionalComponent = () => {
 
       <nav className="head-menu">
         <a href="/home">Inicio</a>
-        <a href="/about">Información</a>
+        <a href="#" onClick={e => { e.preventDefault(); handleOpenContact(); }}>
+          Contáctanos
+        </a>
       </nav>
+
+      {/* Offcanvas lateral izquierdo */}
+      <Offcanvas show={showContact} onHide={handleCloseContact} placement="start">
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Contáctanos</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+<Formulario/>
+        </Offcanvas.Body>
+      </Offcanvas>
     </header>
   );
 };
