@@ -1,0 +1,23 @@
+@media (max-width: 1000px) {
+    .app1-c {
+        flex-direction: column;
+    }
+
+    .app1-c1,
+    .app1-c2 {
+        width: 100%;
+    }
+
+    .app1-b-t {
+        font-size: 32px;
+    }
+
+    .app1-b-t2 {
+        font-size: 16px;
+    }
+
+    .app1-c1-img {
+        width: 50%;
+        height: 200px;
+    }
+}

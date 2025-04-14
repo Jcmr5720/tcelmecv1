@@ -1,0 +1,16 @@
+footer{
+    height: 100%;
+    margin: 0px;
+    padding: 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: black;
+}
+
+.foot-t{
+  color: rgb(202, 199, 199)  ;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
