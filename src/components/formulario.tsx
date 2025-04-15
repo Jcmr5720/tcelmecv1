@@ -23,7 +23,7 @@ const ContactForm = () => {
       };
 
       emailjs
-        .send('service_wh09137', 'template_z3hvh3d', templateParams, 'svCY0z7OS8ZQklArI')
+        .send('service_wh09137', 'template_rzfq7yn', templateParams, 'svCY0z7OS8ZQklArI')
         .then((response) => {
           console.log('Correo electrónico enviado correctamente!', response);
         })
