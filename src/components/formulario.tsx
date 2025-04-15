@@ -9,17 +9,19 @@ const ContactForm = () => {
   const [comment, setComment] = useState('');
   const [mensaje, setMensaje] = useState('');
 
-  // Manejar el envío del formulario
   const handleSubmit = (e: Event) => {
     e.preventDefault();
 
     if (name === '' || email === '' || comment === '') {
       setMensaje('Error: no se han completado todos los campos');
     } else {
+      const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
       const templateParams = {
         from_name: name,
         from_email: email,
         message: comment,
+        time: time,
       };
 
       emailjs
@@ -34,11 +36,11 @@ const ContactForm = () => {
       setName('');
       setEmail('');
       setComment('');
-      setMensaje(`Hola, tus datos son:<br/><br/>Nombre: ${name}<br/>Email: ${email}<br/>Mensaje:<br/>${comment}`);
+      setMensaje(`Hola, tus datos son:<br/><br/>Nombre: ${name}<br/>Email: ${email}
+        <br/>Mensaje:<br/>${comment}<br/>Enviado a las: ${time}`);
     }
   };
 
-  // Manejar cambios en los campos de entrada
   const handleNameChange = (e: Event) => {
     setName((e.target as HTMLInputElement).value);
   };

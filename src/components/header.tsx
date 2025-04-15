@@ -48,7 +48,7 @@ const Header: FunctionalComponent = () => {
           <Offcanvas.Title>Contáctanos</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-<Formulario/>
+          <Formulario />
         </Offcanvas.Body>
       </Offcanvas>
     </header>
