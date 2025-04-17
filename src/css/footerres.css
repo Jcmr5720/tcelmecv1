@@ -1,0 +1,11 @@
+@media (max-width: 1000px) {
+footer,
+.f1,
+.f2,
+.f3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+  }

@@ -22,8 +22,8 @@ const Home = () => {
             />
             <Carousel.Caption>
               <div className="carousel1">
-                <span className="carousel-title1">First slide label</span>
-                <p className="carousel-desc">Nulla vitae elit libero, a pharetra augue mollis interdum.</p></div>
+                <span className="carousel-title1">Mantenimiento industrial</span>
+                <p className="carousel-desc">Lavadoras de botellas, empacadoras, paletizadoras, pasterizadoras, transportadores de botellas y cajas, etc.</p></div>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -34,8 +34,8 @@ const Home = () => {
             />
             <Carousel.Caption>
               <div className="carousel1">
-                <span className="carousel-title2">First slide label</span>
-                <p className="carousel-desc">Nulla vitae elit libero, a pharetra augue mollis interdum.</p></div>
+                <span className="carousel-title2">Soldadura industrial</span>
+                <p className="carousel-desc">Soldadura industrial de precisión para la integridad de sus equipos.</p></div>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -46,8 +46,8 @@ const Home = () => {
             />
             <Carousel.Caption>
               <div className="carousel1">
-                <span className="carousel-title3">First slide label</span>
-                <p className="carousel-desc">Nulla vitae elit libero, a pharetra augue mollis interdum.</p></div>
+                <span className="carousel-title3">Fabricación de Piezas Industriales</span>
+                <p className="carousel-desc">Fabricación a medida para optimizar sus procesos</p></div>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

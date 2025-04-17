@@ -14,6 +14,8 @@
 .app1-a-carr-img {
   height: 550px;
   width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 @keyframes zoom1 {
