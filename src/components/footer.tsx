@@ -23,7 +23,7 @@ const Footer: FunctionalComponent = () => {
         <span className="foot-t">Desarrollado por</span>
         <a 
           className="foot-link"
-          href="https://viteportafoliojcmr.netlify.app/" 
+          href="https://portafoliojcmr.netlify.app/" 
           target="_blank" 
           rel="noopener noreferrer"
         >
